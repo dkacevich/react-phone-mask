@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  background: rgb(2, 30, 62);
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+@layer base {
+  form {
+    background: rgb(210, 210, 210);
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    @media (min-width: 700px){
+      min-width: 400px;
+    }
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .button {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
